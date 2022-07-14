@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a377434-baf3-4e40-b70d-83bcecd72a35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Bwj9sRd9myeOqquUx4fZlm0OYR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -25,12 +31,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.german.generadordenotas.HelloApplication" />
+    <configuration name="com.german.generadordenotas.GeneradorDeNotas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.german.generadordenotas.GeneradorDeNotas" />
       <module name="GeneradorDeNotas" />
       <extension name="coverage">
         <pattern>
@@ -44,7 +51,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.com.german.generadordenotas.GeneradorDeNotas" />
       </list>
     </recent_temporary>
   </component>
