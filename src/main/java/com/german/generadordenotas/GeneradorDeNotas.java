@@ -22,6 +22,8 @@ public class GeneradorDeNotas extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        GuitarString g = new GuitarString(Note.A);
+        System.out.println(g.getTuning());
+        //launch();
     }
 }
