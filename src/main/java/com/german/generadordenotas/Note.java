@@ -2,16 +2,16 @@ package com.german.generadordenotas;
 
 public enum Note {
     C("C"),
-    CSHP("-"),
+    CSHP("C#"),
     D("D"),
-    DSHP("-"),
+    DSHP("D#"),
     E("E"),
     F("F"),
-    FSHP("-"),
+    FSHP("F#"),
     G("G"),
-    GSHP("-"),
+    GSHP("G#"),
     A("A"),
-    ASHP("-"),
+    ASHP("A#"),
     B("B");
 
     private final String symbol;
