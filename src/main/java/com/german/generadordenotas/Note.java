@@ -1,6 +1,7 @@
 package com.german.generadordenotas;
 
 public enum Note {
+    NONE("SIN USAR"),
     C("C"),
     CSHP("C#"),
     D("D"),
@@ -18,6 +19,10 @@ public enum Note {
 
     Note(String symbol) {
         this.symbol = symbol;
+    }
+
+    public boolean isNone() {
+        return symbol.matches("SIN USAR");
     }
 
     @Override

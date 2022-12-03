@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a377434-baf3-4e40-b70d-83bcecd72a35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/NeckController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/PanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/GeneradorDeNotasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/GeneradorDeNotasController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/NeckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/NeckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/panel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/panel.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,7 @@
         <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -38,7 +36,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Neck.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/GeneradorDeNotasController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/MainController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -57,11 +55,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/german/Escritorio/java/Proyectos/JavaFXCharts"
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "/home/german/Escritorio/java/Proyectos/Presupuestos2.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.german.generadordenotas.controllers" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="GeneradorDeNotas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.german.generadordenotas.GeneradorDeNotas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.german.generadordenotas.GeneradorDeNotas" />
       <module name="GeneradorDeNotas" />
       <extension name="coverage">
@@ -76,7 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GeneradorDeNotas" />
+        <item itemvalue="Application.com.german.generadordenotas.GeneradorDeNotas" />
       </list>
     </recent_temporary>
   </component>

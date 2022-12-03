@@ -3,49 +3,55 @@ package com.german.generadordenotas.controllers;
 import com.german.generadordenotas.Note;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 
 public class Controller {
 
     protected static ChoiceBox<Note> firstStr, secondStr, thirdStr, fourthStr, fifthStr, sixthStr, seventStr, eightStr;
     protected static Label noteLabel, stringLabel;
+    protected static HBox neck;
 
-    public static void setNoteLabel(Label noteLabel) {
+    protected static void setNeck(HBox neck) {
+        Controller.neck = neck;
+    }
+
+    protected static void setNoteLabel(Label noteLabel) {
         Controller.noteLabel = noteLabel;
     }
 
-    public static void setStringLabel(Label stringLabel) {
+    protected static void setStringLabel(Label stringLabel) {
         Controller.stringLabel = stringLabel;
     }
 
-    public static void setFirstStr(ChoiceBox<Note> firstStr) {
+    protected static void setFirstStr(ChoiceBox<Note> firstStr) {
         Controller.firstStr = firstStr;
     }
 
-    public static void setSecondStr(ChoiceBox<Note> secondStr) {
+    protected static void setSecondStr(ChoiceBox<Note> secondStr) {
         Controller.secondStr = secondStr;
     }
 
-    public static void setThirdStr(ChoiceBox<Note> thirdStr) {
+    protected static void setThirdStr(ChoiceBox<Note> thirdStr) {
         Controller.thirdStr = thirdStr;
     }
 
-    public static void setFourthStr(ChoiceBox<Note> fourthStr) {
+    protected static void setFourthStr(ChoiceBox<Note> fourthStr) {
         Controller.fourthStr = fourthStr;
     }
 
-    public static void setFifthStr(ChoiceBox<Note> fifthStr) {
+    protected static void setFifthStr(ChoiceBox<Note> fifthStr) {
         Controller.fifthStr = fifthStr;
     }
 
-    public static void setSixthStr(ChoiceBox<Note> sixthStr) {
+    protected static void setSixthStr(ChoiceBox<Note> sixthStr) {
         Controller.sixthStr = sixthStr;
     }
 
-    public static void setSeventStr(ChoiceBox<Note> seventStr) {
+    protected static void setSeventStr(ChoiceBox<Note> seventStr) {
         Controller.seventStr = seventStr;
     }
 
-    public static void setEightStr(ChoiceBox<Note> eightStr) {
+    protected static void setEightStr(ChoiceBox<Note> eightStr) {
         Controller.eightStr = eightStr;
     }
 }
