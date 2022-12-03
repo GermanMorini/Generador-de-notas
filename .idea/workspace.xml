@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a377434-baf3-4e40-b70d-83bcecd72a35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/panel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/NeckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/PanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GuitarString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Mastil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Neck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/GeneradorDeNotasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/panel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/panel.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,10 +36,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotasController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Neck.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/hello-view.fxml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/GeneradorDeNotasController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,21 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/german/Escritorio/java/Proyectos/GeneradorDeNotas&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/german/Escritorio/java/Proyectos/JavaFXCharts"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="com.german.generadordenotas.GeneradorDeNotas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GeneradorDeNotas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.german.generadordenotas.GeneradorDeNotas" />
       <module name="GeneradorDeNotas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.german.generadordenotas.*" />
+          <option name="PATTERN" value="com.german.generadordenotas.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,6 +74,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GeneradorDeNotas" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
