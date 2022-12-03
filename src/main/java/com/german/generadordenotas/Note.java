@@ -22,7 +22,7 @@ public enum Note {
     }
 
     public boolean isNone() {
-        return symbol.matches("SIN USAR");
+        return this.ordinal() == 0;
     }
 
     @Override
