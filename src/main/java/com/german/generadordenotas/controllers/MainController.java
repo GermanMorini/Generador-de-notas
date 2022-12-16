@@ -1,39 +1,44 @@
 package com.german.generadordenotas.controllers;
 
-import com.german.generadordenotas.Note;
-import javafx.collections.ObservableList;
+import com.german.generadordenotas.model.Counter;
 import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ProgressIndicator;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.net.URL;
+import java.util.*;
 
-public class MainController extends Controller {
+public class MainController extends Controller implements Initializable {
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        Controller.setCounter(counter);
+    }
 
     @FXML
-    private Label label;
+    private ProgressIndicator counter;
 
     @FXML
-    protected void generarBtnClick() {
-        Random r = new Random();
-        int randomStr = r.nextInt(8);
+    private Button comenzarBtn;
 
-        Note n = getValues().get(randomStr);
-        if (n.isNone()) {
-            generarBtnClick();
-        } else {
-            stringLabel.setText("" + (8 - randomStr));
-            noteLabel.setText(String.valueOf(Note.values()[r.nextInt(Note.values().length - 1) + 1]));
+    private boolean comenzado = false;
+
+    @FXML
+    protected void btnClick() {
+        comenzado = !comenzado;
+        Counter c = new Counter(3);
+        manageBtnText();
+        if (!comenzado) {
+            c.stop();
         }
     }
 
-    private List<Note> getValues() {
-        List<Note> values = new ArrayList<>();
-        neck.getChildren().forEach(n -> {
-            values.add(((ChoiceBox<Note>) n).getValue());
-        });
-        return values;
+    private void manageBtnText() {
+        if (comenzado) {
+            comenzarBtn.setText("Detener");
+        } else {
+            comenzarBtn.setText("Comenzar");
+        }
     }
 }

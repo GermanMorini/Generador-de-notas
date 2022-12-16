@@ -12,7 +12,7 @@ public class GeneradorDeNotas extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(GeneradorDeNotas.class.getResource("main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1000, 600);
+        Scene scene = new Scene(fxmlLoader.load(), 1000, 700);
         stage.setTitle("Generador de notas");
         stage.setMinHeight(600);
         stage.setMinWidth(1000);
