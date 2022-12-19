@@ -2,6 +2,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -9,12 +10,17 @@
    <children>
       <fx:include source="neck.fxml" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="0.0" />
       <fx:include source="panel.fxml" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="250.0" />
-      <Button fx:id="generarBtn" layoutX="350.0" layoutY="470.0" mnemonicParsing="false" onAction="#generarBtnClick" prefHeight="38.0" prefWidth="124.0" text="Generar" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="470.0">
+      <Button fx:id="generarBtn" layoutX="520.0" layoutY="461.0" mnemonicParsing="false" onAction="#generarBtnClick" prefHeight="57.0" prefWidth="251.0" text="Generar" AnchorPane.leftAnchor="520.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="460.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
          <font>
             <Font name="System Bold" size="30.0" />
          </font></Button>
+      <TextField fx:id="trastesTF" layoutX="274.0" layoutY="460.0" prefHeight="57.0" prefWidth="133.0" promptText="Nº Trastes">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>

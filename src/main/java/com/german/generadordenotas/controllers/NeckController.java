@@ -7,10 +7,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.HBox;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class NeckController extends Controller implements Initializable {
 
