@@ -5,9 +5,10 @@ module com.german.generadordenotas {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
+    requires java.desktop;
 
     opens com.german.generadordenotas to javafx.fxml;
     exports com.german.generadordenotas;
-    opens com.german.generadordenotas.controllers to javafx.fxml;
-    exports com.german.generadordenotas.controllers;
+    opens com.german.generadordenotas.controller to javafx.fxml;
+    exports com.german.generadordenotas.controller;
 }

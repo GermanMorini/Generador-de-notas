@@ -26,10 +26,11 @@ public enum Note {
     }
 
     public static Note addSemitones(Note n, int st) {
+        st = Math.floorMod(st, 12);
         try {
             return Note.values()[n.ordinal() + st];
         } catch (IndexOutOfBoundsException e) {
-            return addSemitones(C, st - 1);
+            return addSemitones(C, st - (13 - n.ordinal()));
         }
     }
 

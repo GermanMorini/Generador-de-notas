@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a377434-baf3-4e40-b70d-83bcecd72a35" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/model/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/NeckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/NeckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/PanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/PanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/panel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/panel.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +27,8 @@
       <list>
         <option value="Enum" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,7 +43,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controllers/MainController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/MainController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/main.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,17 +57,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/german/Escritorio/java/Proyectos/Presupuestos2.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "/home/german/Escritorio/java/Proyectos/GeneradorDeNotas",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -75,7 +83,7 @@
       <module name="GeneradorDeNotas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.german.generadordenotas.controllers.*" />
+          <option name="PATTERN" value="com.german.generadordenotas.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

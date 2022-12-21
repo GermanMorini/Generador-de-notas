@@ -1,4 +1,4 @@
-package com.german.generadordenotas.controllers;
+package com.german.generadordenotas.controller;
 
 import com.german.generadordenotas.Note;
 import javafx.scene.control.ChoiceBox;

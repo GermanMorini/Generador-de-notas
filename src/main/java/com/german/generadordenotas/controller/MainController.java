@@ -1,6 +1,7 @@
-package com.german.generadordenotas.controllers;
+package com.german.generadordenotas.controller;
 
 import com.german.generadordenotas.Note;
+import com.german.generadordenotas.model.Utils;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
@@ -10,16 +11,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static java.lang.Integer.parseInt;
+
 public class MainController extends Controller {
 
     @FXML
     private Label label;
 
     @FXML
-    private TextField trastesTF;
+    private TextField startTf, endTf;
 
     @FXML
     protected void generarBtnClick() {
+        try {
+            pickRandomNote();
+        } catch (IllegalArgumentException e) {
+            Utils.showMessageDialog("Prueba revisar el número de trastes", e.getMessage());
+        }
+    }
+
+    private void pickRandomNote() throws IllegalArgumentException {
         Random r = new Random();
         int randomStr = r.nextInt(8);
 
@@ -27,8 +38,11 @@ public class MainController extends Controller {
         if (n.isNone()) {
             generarBtnClick();
         } else {
+            int start = parseInt(startTf.getText());
+            int end = parseInt(endTf.getText());
+
             stringLabel.setText("" + (8 - randomStr));
-            noteLabel.setText(Note.addSemitones(n, r.nextInt(Integer.parseInt(trastesTF.getText()))).toString());
+            noteLabel.setText(Note.addSemitones(n, r.nextInt(start , end + 1)).toString());
         }
     }
 
