@@ -9,6 +9,8 @@ module com.german.generadordenotas {
 
     opens com.german.generadordenotas to javafx.fxml;
     exports com.german.generadordenotas;
-    opens com.german.generadordenotas.controllers to javafx.fxml;
-    exports com.german.generadordenotas.controllers;
+    opens com.german.generadordenotas.controller to javafx.fxml;
+    exports com.german.generadordenotas.controller;
+    exports com.german.generadordenotas.model;
+    opens com.german.generadordenotas.model to javafx.fxml;
 }
