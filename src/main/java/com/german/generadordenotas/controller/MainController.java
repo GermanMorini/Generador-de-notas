@@ -34,7 +34,7 @@ public class MainController extends Controller {
         Random r = new Random();
         int randomStr = r.nextInt(8);
 
-        Note n = getNeckValues().get(randomStr);
+        Note n = NeckController.getNeckValues().get(randomStr);
         if (n.isNone()) {
             generarBtnClick();
         } else {
@@ -44,13 +44,5 @@ public class MainController extends Controller {
             stringLabel.setText("" + (8 - randomStr));
             noteLabel.setText(Note.addSemitones(n, r.nextInt(start , end + 1)).toString());
         }
-    }
-
-    private List<Note> getNeckValues() {
-        List<Note> values = new ArrayList<>();
-        neck.getChildren().forEach(n -> {
-            values.add(((ChoiceBox<Note>) n).getValue());
-        });
-        return values;
     }
 }

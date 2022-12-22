@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ContextMenu?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
@@ -45,10 +48,45 @@
                </cursor></ChoiceBox>
          </children>
       </HBox>
-      <Label layoutX="148.0" layoutY="23.0" prefHeight="61.0" prefWidth="415.0" text="Cuerdas: (8va - 1era)">
+      <Label layoutX="30.0" layoutY="22.0" prefHeight="61.0" prefWidth="415.0" text="Cuerdas: (8va - 1era)">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#standardMIClick" text="Estandar (EADGBE)" />
+                  <MenuItem mnemonicParsing="false" text="Estandar (BEADGBE)" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button fx:id="sharpBtn" layoutX="594.0" layoutY="14.0" mnemonicParsing="false" onAction="#sharpBtnClick" prefHeight="32.0" prefWidth="61.0" text="#">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="flatBtn" layoutX="594.0" layoutY="53.0" mnemonicParsing="false" onAction="#flatBtnClick" prefHeight="32.0" prefWidth="61.0" text="b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="alterationLbl" alignment="CENTER" layoutX="495.0" layoutY="23.0" onMousePressed="#alterationLblClick" prefHeight="61.0" prefWidth="73.0" text="0">
+         <font>
+            <Font name="DejaVu Sans Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
    </children>
 </AnchorPane>

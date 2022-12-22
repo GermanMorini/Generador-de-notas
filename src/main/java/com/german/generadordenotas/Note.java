@@ -25,6 +25,11 @@ public enum Note {
         return this.ordinal() == 0;
     }
 
+    public Note addSemitones(int st) {
+        if (!this.isNone()) return addSemitones(this, st);
+        return this;
+    }
+
     public static Note addSemitones(Note n, int st) {
         st = Math.floorMod(st, 12);
         try {

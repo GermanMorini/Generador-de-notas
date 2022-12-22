@@ -11,8 +11,8 @@ public class PanelController extends Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Controller.setNoteLabel(noteLabel);
-        Controller.setStringLabel(stringLabel);
+        Controller.noteLabel = noteLabel;
+        Controller.stringLabel = stringLabel;
     }
 
     @FXML
