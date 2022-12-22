@@ -1,46 +1,52 @@
 package com.german.generadordenotas.model;
 
 public enum Note {
-    NONE("SIN USAR"),
-    C("C"),
-    CSHP("C#"),
-    D("D"),
-    DSHP("D#"),
-    E("E"),
-    F("F"),
-    FSHP("F#"),
-    G("G"),
-    GSHP("G#"),
-    A("A"),
-    ASHP("A#"),
-    B("B");
+    NONE("SIN USAR", "SIN USAR"),
+    C("C", "B#"),
+    CSHP("C#", "Db"),
+    D("D", "C##"),
+    DSHP("D#", "Eb"),
+    E("E", "Fb"),
+    F("F", "E#"),
+    FSHP("F#", "Gb"),
+    G("G", "Abb"),
+    GSHP("G#", "Ab"),
+    A("A", "G##"),
+    ASHP("A#", "Bb"),
+    B("B", "Cb");
 
-    private final String symbol;
+    private final String symbol1, symbol2;
 
-    Note(String symbol) {
-        this.symbol = symbol;
+    Note(String symbol1, String symbol2) {
+        this.symbol1 = symbol1;
+        this.symbol2 = symbol2;
     }
 
     public boolean isNone() {
         return this.ordinal() == 0;
     }
 
-    public Note addSemitones(int st) {
-        if (!this.isNone()) return addSemitones(this, st);
+    public Note changeNote(int st) {
+        if (!this.isNone()) return changeNote(this, st);
         return this;
     }
 
-    public static Note addSemitones(Note n, int st) {
-        st = Math.floorMod(st, 12);
+    public static Note changeNote(Note n, int semitones) {
+        semitones = Math.floorMod(semitones, 12);
         try {
-            return Note.values()[n.ordinal() + st];
+            return Note.values()[n.ordinal() + semitones];
         } catch (IndexOutOfBoundsException e) {
-            return addSemitones(C, st - (13 - n.ordinal()));
+            return changeNote(C, semitones - (13 - n.ordinal()));
         }
     }
 
     @Override
     public String toString() {
-        return symbol;
+        return symbol1;
+    }
+
+    public String toString(boolean b) {
+        if(b) return symbol1;
+        return symbol2;
     }
 }

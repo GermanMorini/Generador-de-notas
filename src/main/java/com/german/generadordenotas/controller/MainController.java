@@ -1,7 +1,7 @@
 package com.german.generadordenotas.controller;
 
 import com.german.generadordenotas.model.Note;
-import com.german.generadordenotas.model.Utils;
+import com.german.generadordenotas.model.AlertManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -23,7 +23,7 @@ public class MainController extends Controller {
         try {
             pickRandomNote();
         } catch (IllegalArgumentException e) {
-            Utils.showMessageDialog("Prueba revisar el número de trastes", e.getMessage());
+            AlertManager.showMessageDialog("Prueba revisar el número de trastes", e.getMessage());
         }
     }
 
@@ -33,13 +33,13 @@ public class MainController extends Controller {
 
         Note n = NeckController.getNeckValues().get(randomStr);
         if (n.isNone()) {
-            generarBtnClick();
+            pickRandomNote();
         } else {
             int start = parseInt(startTf.getText());
             int end = parseInt(endTf.getText());
 
             stringLabel.setText("" + (8 - randomStr));
-            noteLabel.setText(Note.addSemitones(n, r.nextInt(start , end + 1)).toString());
+            noteLabel.setText(Note.changeNote(n, r.nextInt(start , end + 1)).toString(r.nextBoolean()));
         }
     }
 }

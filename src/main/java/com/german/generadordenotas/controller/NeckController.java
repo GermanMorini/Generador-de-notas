@@ -18,7 +18,10 @@ public class NeckController extends Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         Controller.neck = neck;
 
-        addAfinationsToMenu();
+        Afination[] afinations = Afination.values();
+        for(Afination af : afinations) {
+            afinationMenu.getItems().add(createMi(af));
+        }
 
         eightStr.getItems().setAll(Note.values());
         seventhStr.getItems().setAll(Note.values());
@@ -49,18 +52,15 @@ public class NeckController extends Controller implements Initializable {
 
     private int counter = 0;
 
-    private void addAfinationsToMenu() {
-        Afination[] afinations = Afination.values();
-        for(Afination af : afinations) {
-            MenuItem mi = new MenuItem();
-            mi.setText(af.getName());
-            mi.setOnAction(e -> {
-                e.consume();
-                applyAfination(af);
-                alterNotes(counter);
-            });
-            afinationMenu.getItems().add(mi);
-        };
+    private MenuItem createMi(Afination af) {
+        MenuItem mi = new MenuItem();
+        mi.setText(af.getName());
+        mi.setOnAction(e -> {
+            e.consume();
+            applyAfination(af);
+            alterNotes(counter);
+        });
+        return mi;
     }
 
     protected void applyAfination(Afination a) {
@@ -106,7 +106,7 @@ public class NeckController extends Controller implements Initializable {
     private void alterNotes(int amount) {
         neck.getChildren().forEach(n -> {
             ChoiceBox<Note> cb = ((ChoiceBox<Note>) n);
-            cb.setValue(cb.getValue().addSemitones(amount));
+            cb.setValue(cb.getValue().changeNote(amount));
         });
     }
 }

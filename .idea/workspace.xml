@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a377434-baf3-4e40-b70d-83bcecd72a35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/model/Afination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/model/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/NeckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/german/generadordenotas/controller/NeckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/german/generadordenotas/neck.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="6a377434-baf3-4e40-b70d-83bcecd72a35" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +27,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/german/generadordenotas/GeneradorDeNotas.java" root0="FORCE_HIGHLIGHTING" />

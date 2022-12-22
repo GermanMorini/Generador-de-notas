@@ -2,7 +2,7 @@ package com.german.generadordenotas.model;
 
 import javafx.scene.control.Alert;
 
-public class Utils {
+public class AlertManager {
     private static final java.awt.Dimension DIMENSION = new java.awt.Dimension(600, 420);
 
     public static void showMessageDialog(String msg, String title) {
