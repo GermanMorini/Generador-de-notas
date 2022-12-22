@@ -1,4 +1,4 @@
-package com.german.generadordenotas;
+package com.german.generadordenotas.model;
 
 public enum Note {
     NONE("SIN USAR"),

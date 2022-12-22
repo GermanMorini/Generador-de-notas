@@ -1,14 +1,11 @@
 package com.german.generadordenotas.controller;
 
-import com.german.generadordenotas.Note;
+import com.german.generadordenotas.model.Note;
 import com.german.generadordenotas.model.Utils;
 import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 import static java.lang.Integer.parseInt;

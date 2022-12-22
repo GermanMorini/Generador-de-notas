@@ -1,11 +1,10 @@
 package com.german.generadordenotas.controller;
 
-import com.german.generadordenotas.Note;
+import com.german.generadordenotas.model.Afination;
+import com.german.generadordenotas.model.Note;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 
 import java.net.URL;
@@ -17,44 +16,27 @@ public class NeckController extends Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // TODO: Revisar si realmente hacen falta todos estos campos
-        Controller.firstStr = firstStr;
-        Controller.secondStr = secondStr;
-        Controller.thirdStr = thirdStr;
-        Controller.fourthStr = fourthStr;
-        Controller.fifthStr = fifthStr;
-        Controller.sixthStr = sixthStr;
-        Controller.seventStr = seventStr;
-        Controller.eightStr = eightStr;
         Controller.neck = neck;
 
+        addAfinationsToMenu();
+
         eightStr.getItems().setAll(Note.values());
-        eightStr.setValue(Note.NONE);
-
         seventhStr.getItems().setAll(Note.values());
-        seventhStr.setValue(Note.NONE);
-
         sixthStr.getItems().setAll(Note.values());
-        sixthStr.setValue(Note.E);
-
         fifthStr.getItems().setAll(Note.values());
-        fifthStr.setValue(Note.A);
-
         fourthStr.getItems().setAll(Note.values());
-        fourthStr.setValue(Note.D);
-
         thirdStr.getItems().setAll(Note.values());
-        thirdStr.setValue(Note.G);
-
         secondStr.getItems().setAll(Note.values());
-        secondStr.setValue(Note.B);
-
         firstStr.getItems().setAll(Note.values());
-        firstStr.setValue(Note.E);
+
+        applyAfination(Afination.STANDARD1);
     }
 
     @FXML
     private ChoiceBox<Note> firstStr, secondStr, thirdStr, fourthStr, fifthStr, sixthStr, seventhStr, eightStr;
+
+    @FXML
+    private ContextMenu afinationMenu;
 
     @FXML
     private HBox neck;
@@ -67,26 +49,37 @@ public class NeckController extends Controller implements Initializable {
 
     private int counter = 0;
 
+    private void addAfinationsToMenu() {
+        Afination[] afinations = Afination.values();
+        for(Afination af : afinations) {
+            MenuItem mi = new MenuItem();
+            mi.setText(af.getName());
+            mi.setOnAction(e -> {
+                e.consume();
+                applyAfination(af);
+                alterNotes(counter);
+            });
+            afinationMenu.getItems().add(mi);
+        };
+    }
+
+    protected void applyAfination(Afination a) {
+        eightStr.setValue(a.get_8());
+        seventhStr.setValue(a.get_7());
+        sixthStr.setValue(a.get_6());
+        fifthStr.setValue(a.get_5());
+        fourthStr.setValue(a.get_4());
+        thirdStr.setValue(a.get_3());
+        secondStr.setValue(a.get_2());
+        firstStr.setValue(a.get_1());
+    }
+
     protected static List<Note> getNeckValues() {
         List<Note> values = new ArrayList<>();
         Controller.neck.getChildren().forEach(n -> {
             values.add(((ChoiceBox<Note>) n).getValue());
         });
         return values;
-    }
-
-    @FXML
-    protected void standardMIClick() {
-        eightStr.setValue(Note.NONE);
-        seventhStr.setValue(Note.NONE);
-        sixthStr.setValue(Note.E);
-        fifthStr.setValue(Note.A);
-        fourthStr.setValue(Note.D);
-        thirdStr.setValue(Note.G);
-        secondStr.setValue(Note.B);
-        firstStr.setValue(Note.E);
-
-        alterNotes(counter);
     }
 
     @FXML

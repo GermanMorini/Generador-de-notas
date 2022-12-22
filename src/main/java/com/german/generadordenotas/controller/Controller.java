@@ -1,6 +1,6 @@
 package com.german.generadordenotas.controller;
 
-import com.german.generadordenotas.Note;
+import com.german.generadordenotas.model.Note;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
