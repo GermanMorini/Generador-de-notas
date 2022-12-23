@@ -39,7 +39,7 @@ public class MainController extends Controller {
             int end = parseInt(endTf.getText());
 
             stringLabel.setText("" + (8 - randomStr));
-            noteLabel.setText(Note.changeNote(n, r.nextInt(start , end + 1)).toString(r.nextBoolean()));
+            noteLabel.setText(Note.changeNote(n, r.nextInt(start , end + 1)).toString(r.nextInt(1, 4)));
         }
     }
 }
