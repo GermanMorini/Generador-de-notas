@@ -1,25 +1,26 @@
 package com.german.generadordenotas.model;
 
 public enum Note {
-    NONE("SIN USAR", "SIN USAR"),
-    C("C", "B#"),
-    CSHP("C#", "Db"),
-    D("D", "C##"),
-    DSHP("D#", "Eb"),
-    E("E", "Fb"),
-    F("F", "E#"),
-    FSHP("F#", "Gb"),
-    G("G", "Abb"),
-    GSHP("G#", "Ab"),
-    A("A", "G##"),
-    ASHP("A#", "Bb"),
-    B("B", "Cb");
+    NONE("SIN USAR", "", ""),
+    C("C", "Dbb", "B#"),
+    CSHP("C#", "Db", "B##"),
+    D("D", "Ebb", "C##"),
+    DSHP("D#", "Eb", "Fbb"),
+    E("E", "Fb", "D##"),
+    F("F", "Gbb", "E#"),
+    FSHP("F#", "Gb", "E##"),
+    G("G", "Abb", "F##"),
+    GSHP("G#", "Ab", "Ab"),
+    A("A", "Bbb", "G##"),
+    ASHP("A#", "Bb", "Cbb"),
+    B("B", "Cb", "A##");
 
-    private final String symbol1, symbol2;
+    private final String symbol1, symbol2, symbol3;
 
-    Note(String symbol1, String symbol2) {
+    Note(String symbol1, String symbol2, String symbol3) {
         this.symbol1 = symbol1;
         this.symbol2 = symbol2;
+        this.symbol3 = symbol3;
     }
 
     public boolean isNone() {
@@ -45,8 +46,11 @@ public enum Note {
         return symbol1;
     }
 
-    public String toString(boolean b) {
-        if(b) return symbol1;
-        return symbol2;
+    public String toString(int n) {
+        return switch (n) {
+            case 1 -> symbol1;
+            case 2 -> symbol2;
+            default -> symbol3;
+        };
     }
 }
