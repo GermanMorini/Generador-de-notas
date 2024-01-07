@@ -38,6 +38,8 @@ public class MainController extends Controller {
             int start = parseInt(startTf.getText());
             int end = parseInt(endTf.getText());
 
+            if (start < 0 || end < 0) throw new IllegalArgumentException();
+
             stringLabel.setText("" + (8 - randomStr));
             noteLabel.setText(Note.changeNote(n, r.nextInt(start , end + 1)).toString(r.nextInt(1, 4)));
         }

@@ -6,6 +6,7 @@ module com.german.generadordenotas {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
+    requires atlantafx.base;
 
     opens com.german.generadordenotas to javafx.fxml;
     exports com.german.generadordenotas;
